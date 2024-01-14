@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 1s ease-in-out ;
+}
+body{
+    background-image: url(./images/Sky.gif);
+    background-size:cover;
+    /* background-position: center; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    height: 100vh;
+    
+    
+}
+
+.kite img{
+    width: 800px;
+
+}
+.kite-left img{
+    width: 900px;
+
+}
+.kite img{
+    width: 800px;
+
+}
+
+.wish{
+    z-index: 100;
+
+}
+.wish img{
+    
+    width: 1800px;
+    height: 500px;
+}
+.kite{
+    position: absolute;
+    bottom: 10vh;
+    left: 40%;
+    transform: rotate(45deg);
+
+    animation-name: myanim;
+    animation-duration: 4s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
+}
+.kite-left{
+ 
+    position: absolute;
+    bottom: 10vh;
+    left: 20%;
+    transform: rotate(45deg);
+
+    animation-name: myanim2;
+    animation-duration: 5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: linear;
+}
+
+/* voilet kite */
+
+@keyframes myanim{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    75%{
+        transform: translate(350px,190px);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* kite-left */
+@keyframes myanim2{
+    0%{
+        transform: rotate(-50deg);
+    }
+    50%{
+        transform: rotate(320deg);
+    }
+    75%{
+        transform: translate(-350px,-190px);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+h2{
+    position: absolute;
+    bottom: 100px;
+    left: 40%;
+    font-size: 60px;
+}
+
+.sideleft{
+    position: fixed;
+    width: 1200px;
+    bottom:-130px;
+    left:100px;
+    
+}
+
+h1{
+  
+    /* padding-left: 1%; */
+    /* padding: 100px; */
+}
+
+ h1{
+    font-family: poppins ,sans-serif;
+    /* text-align: right; */
+    position: fixed;
+    right: 0%;
+    /* transition: all 0.3s ease-in-out ;
+    font-size: 4em; */
+    color: white;
+    font-size: 9em;
+    display: inline-block;
+    animation: myName 1s infinite;
+    animation-direction: alternate;
+    /* background: rgb(187, 0, 255); */
+    border:4px solid violet;
+    padding-inline: 100px;
+    text-shadow: 4px 4px 5px rgb(255, 0, 230);
+    padding-left: 1%;
+    border-radius: 100px;
+}
+h1:hover{
+    /* font-size: 7em; */
+}
+
+
+/* media query */
+@media screen and (max-width:900px) {
+    .kite img{
+        width: 180px;
+    
+    }
+    .wish img{
+    
+        width: 240px;
+        height: 80px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+    .sideleft{
+        position: fixed;
+        width: 120px;
+        bottom:0;
+        left:10px;
+        
+    }
+    .kite-left img{
+        width: 200px;
+    
+    }
+ h1{
+    font-size: 1em;
+    padding-inline: 10px;
+    bottom: 10px;
+h1:hover{
+    font-size:0.9em;
+}
+ }
+}
+
+
+/* span{
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 0, 191));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+} */
